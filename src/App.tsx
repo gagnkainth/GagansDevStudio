@@ -206,121 +206,213 @@ export default function App() {
         </div>
       </section>
 
-      {/* Pricing Table */}
+      {/* Pricing Section */}
       <section id="pricing" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Simple, Transparent Pricing</h2>
-            <p className="text-slate-600 text-lg">Invest in a digital storefront that works for you 24/7.</p>
+            <p className="text-slate-600 text-lg">Choose the plan that fits your business goals and get a website built fast.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
-            {/* Starter */}
+          <div className="grid gap-8 lg:grid-cols-4">
             <motion.div
               whileHover={{ y: -8 }}
-              className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 transition-all duration-300"
+              className="flex flex-col h-full bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-200 transition-all duration-300"
             >
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Starter</h3>
-              <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-3xl font-bold">₹1,999</span>
-              </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3 text-slate-600">
-                  <CircleCheckBig size={20} className="text-slate-400 shrink-0 mt-0.5" />
-                  <span>One-Page Professional Design</span>
+              <div className="inline-flex items-center rounded-full bg-sky-100 px-4 py-2 text-xs uppercase tracking-[0.24em] font-semibold text-sky-700 mb-4">Starter</div>
+              <h3 className="text-2xl font-semibold text-slate-900 mb-2">Vercel Subdomain</h3>
+              <p className="text-slate-600 mb-6">Best for personal use with a fast online launch and essential visibility.</p>
+
+              <ul className="space-y-4 mb-8 text-slate-700">
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-sky-500 shrink-0 mt-0.5" />
+                  <span>Vercel Subdomain</span>
                 </li>
-                <li className="flex items-start gap-3 text-slate-600">
-                  <CircleCheckBig size={20} className="text-slate-400 shrink-0 mt-0.5" />
-                  <span>Standard Web Address</span>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-sky-500 shrink-0 mt-0.5" />
+                  <span>Ultra-fast loading</span>
                 </li>
-                <li className="flex items-start gap-3 text-slate-600">
-                  <CircleCheckBig size={20} className="text-slate-400 shrink-0 mt-0.5" />
-                  <span>Fully Mobile Responsive</span>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-sky-500 shrink-0 mt-0.5" />
+                  <span>100% responsive UI</span>
                 </li>
-                <li className="flex items-start gap-3 text-slate-600">
-                  <CircleCheckBig size={20} className="text-slate-400 shrink-0 mt-0.5" />
-                  <span>Google Maps Location Link</span>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-sky-500 shrink-0 mt-0.5" />
+                  <span>High-speed hosting</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-sky-500 shrink-0 mt-0.5" />
+                  <span>Secure SSL (HTTPS)</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-400">
+                  <span className="mt-0.5">✕</span>
+                  <span>No contact form</span>
+                </li>
+                <li className="flex items-start gap-3 text-slate-400">
+                  <span className="mt-0.5">✕</span>
+                  <span>No maps location</span>
                 </li>
               </ul>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="w-full py-3 px-6 rounded-full font-bold text-slate-900 bg-slate-100 hover:bg-slate-200 hover:scale-105 active:scale-95 transition-transform"
-              >
-                Get Started
-              </button>
+
+              <div className="mt-auto">
+                <div className="text-slate-900 text-3xl font-bold mb-6">₹4,999</div>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full rounded-full bg-slate-900 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
+                >
+                  Choose Starter
+                </button>
+              </div>
             </motion.div>
 
-            {/* Professional (Highlighted) */}
             <motion.div
               whileHover={{ y: -8 }}
-              className="bg-slate-900 rounded-3xl p-8 shadow-xl border border-slate-800 transition-all duration-300 relative md:-mt-8 md:mb-8"
+              className="flex flex-col h-full bg-slate-950 rounded-3xl p-8 shadow-2xl border border-slate-800 text-white transition-all duration-300"
             >
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-action-blue text-white px-4 py-1 rounded-full text-sm font-bold tracking-wide uppercase">
-                Best Value
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Professional</h3>
-              <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-3xl font-bold text-white">₹2,999</span>
-              </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3 text-slate-300">
-                  <CircleCheckBig size={20} className="text-action-blue shrink-0 mt-0.5" />
-                  <span>Everything in Starter</span>
+              <div className="inline-flex items-center rounded-full bg-emerald-500/10 px-4 py-2 text-xs uppercase tracking-[0.24em] font-semibold text-emerald-300 mb-4">Standard</div>
+              <h3 className="text-2xl font-semibold text-white mb-2">1-Year FREE .in Domain</h3>
+              <p className="text-slate-300 mb-6">Trending choice for local businesses that want credibility and strong lead capture.</p>
+
+              <ul className="space-y-4 mb-8 text-slate-300">
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <span>1-Year FREE .in Domain</span>
                 </li>
-                <li className="flex items-start gap-3 text-slate-300">
-                  <CircleCheckBig size={20} className="text-action-blue shrink-0 mt-0.5" />
-                  <span className="text-white font-medium">Official .in Domain Name</span>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <span>Google Maps Location</span>
                 </li>
-                <li className="flex items-start gap-3 text-slate-300">
-                  <CircleCheckBig size={20} className="text-action-blue shrink-0 mt-0.5" />
-                  <span>Professional Email Setup</span>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <span>Professional Text Handles</span>
                 </li>
-                <li className="flex items-start gap-3 text-slate-300">
-                  <CircleCheckBig size={20} className="text-action-blue shrink-0 mt-0.5" />
-                  <span>WhatsApp Chat Integration</span>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <span>WhatsApp Chat Button</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <span>All Starter Features</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <span>Standard Support</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <span>Clean Modern Design</span>
                 </li>
               </ul>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="w-full py-3 px-6 rounded-full font-bold text-white bg-action-blue hover:bg-blue-600 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 active:scale-95 transition-transform"
-              >
-                Get Started
-              </button>
+
+              <div className="mt-auto">
+                <div className="text-white text-3xl font-bold mb-6">₹7,499</div>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full rounded-full bg-emerald-500 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-400"
+                >
+                  Choose Standard
+                </button>
+              </div>
             </motion.div>
 
-            {/* Business */}
             <motion.div
               whileHover={{ y: -8 }}
-              className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 transition-all duration-300"
+              className="flex flex-col h-full bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-200 transition-all duration-300"
             >
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Business</h3>
-              <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-3xl font-bold">₹3,999</span>
-              </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3 text-slate-600">
-                  <CircleCheckBig size={20} className="text-slate-400 shrink-0 mt-0.5" />
-                  <span>Everything in Professional</span>
+              <div className="inline-flex items-center rounded-full bg-violet-100 px-4 py-2 text-xs uppercase tracking-[0.24em] font-semibold text-violet-700 mb-4">BYOD</div>
+              <h3 className="text-2xl font-semibold text-slate-900 mb-2">Own Domain</h3>
+              <p className="text-slate-600 mb-6">For existing owners who want a polished brand experience and premium control.</p>
+
+              <ul className="space-y-4 mb-8 text-slate-700">
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
+                  <span>Use Your Own Domain</span>
                 </li>
-                <li className="flex items-start gap-3 text-slate-600">
-                  <CircleCheckBig size={20} className="text-slate-400 shrink-0 mt-0.5" />
-                  <span className="font-medium text-slate-900">Official .com Domain Name</span>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
+                  <span>Google Maps Location</span>
                 </li>
-                <li className="flex items-start gap-3 text-slate-600">
-                  <CircleCheckBig size={20} className="text-slate-400 shrink-0 mt-0.5" />
-                  <span>Basic SEO (Show up on Google)</span>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
+                  <span>Professional Text Handles</span>
                 </li>
-                <li className="flex items-start gap-3 text-slate-600">
-                  <CircleCheckBig size={20} className="text-slate-400 shrink-0 mt-0.5" />
-                  <span>1 Year Technical Support</span>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
+                  <span>WhatsApp Chat Button</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
+                  <span>All Standard Features</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
+                  <span>Pro-Level UI/UX</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
+                  <span>DNS Management</span>
                 </li>
               </ul>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="w-full py-3 px-6 rounded-full font-bold text-slate-900 bg-slate-100 hover:bg-slate-200 hover:scale-105 active:scale-95 transition-transform"
-              >
-                Get Started
-              </button>
+
+              <div className="mt-auto">
+                <div className="text-slate-900 text-3xl font-bold mb-6">₹7,999</div>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full rounded-full bg-indigo-600 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500"
+                >
+                  Choose BYOD
+                </button>
+              </div>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ y: -8 }}
+              className="flex flex-col h-full rounded-3xl p-8 shadow-xl border border-amber-200 bg-gradient-to-br from-amber-50 via-amber-100 to-white transition-all duration-300"
+            >
+              <div className="inline-flex items-center rounded-full bg-amber-200 px-4 py-2 text-xs uppercase tracking-[0.24em] font-semibold text-amber-900 mb-4">Premium Pro</div>
+              <h3 className="text-2xl font-semibold text-slate-900 mb-2">1-Year FREE .com Domain</h3>
+              <p className="text-slate-600 mb-6">The complete package for businesses that want top-tier visibility and sustained growth.</p>
+
+              <ul className="space-y-4 mb-8 text-slate-700">
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-amber-600 shrink-0 mt-0.5" />
+                  <span>1-Year FREE .com Domain</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-amber-600 shrink-0 mt-0.5" />
+                  <span>Google Maps Location</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-amber-600 shrink-0 mt-0.5" />
+                  <span>Interactive Social Icons</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-amber-600 shrink-0 mt-0.5" />
+                  <span>WhatsApp Business API</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-amber-600 shrink-0 mt-0.5" />
+                  <span>Google Search Console / SEO</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-amber-600 shrink-0 mt-0.5" />
+                  <span>1-Year Maintenance Card</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CircleCheckBig size={20} className="text-amber-600 shrink-0 mt-0.5" />
+                  <span>Priority Business Growth</span>
+                </li>
+              </ul>
+
+              <div className="mt-auto">
+                <div className="text-slate-900 text-3xl font-bold mb-6">₹9,999</div>
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full rounded-full bg-gradient-to-r from-amber-500 to-amber-600 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-amber-200/50 transition hover:opacity-95"
+                >
+                  Choose Premium Pro
+                </button>
+              </div>
             </motion.div>
           </div>
         </div>
