@@ -214,7 +214,7 @@ export default function App() {
             <p className="text-slate-600 text-lg">Choose the plan that fits your business goals and get a website built fast.</p>
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-4">
+          <div className="grid gap-8 lg:grid-cols-3">
             <motion.div
               whileHover={{ y: -8 }}
               className="flex flex-col h-full bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-200 transition-all duration-300"
@@ -255,7 +255,7 @@ export default function App() {
               </ul>
 
               <div className="mt-auto">
-                <div className="text-slate-900 text-3xl font-bold mb-6">₹4,999</div>
+                <div className="text-slate-900 text-3xl font-bold mb-6">₹5,000</div>
                 <button
                   onClick={() => scrollToSection('contact')}
                   className="w-full rounded-full bg-slate-900 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
@@ -305,62 +305,12 @@ export default function App() {
               </ul>
 
               <div className="mt-auto">
-                <div className="text-white text-3xl font-bold mb-6">₹7,499</div>
+                <div className="text-white text-3xl font-bold mb-6">₹10,000</div>
                 <button
                   onClick={() => scrollToSection('contact')}
                   className="w-full rounded-full bg-emerald-500 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-400"
                 >
                   Choose Standard
-                </button>
-              </div>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ y: -8 }}
-              className="flex flex-col h-full bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-200 transition-all duration-300"
-            >
-              <div className="inline-flex items-center rounded-full bg-violet-100 px-4 py-2 text-xs uppercase tracking-[0.24em] font-semibold text-violet-700 mb-4">BYOD</div>
-              <h3 className="text-2xl font-semibold text-slate-900 mb-2">Own Domain</h3>
-              <p className="text-slate-600 mb-6">For existing owners who want a polished brand experience and premium control.</p>
-
-              <ul className="space-y-4 mb-8 text-slate-700">
-                <li className="flex items-start gap-3">
-                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
-                  <span>Use Your Own Domain</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
-                  <span>Google Maps Location</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
-                  <span>Professional Text Handles</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
-                  <span>WhatsApp Chat Button</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
-                  <span>All Standard Features</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
-                  <span>Pro-Level UI/UX</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CircleCheckBig size={20} className="text-violet-500 shrink-0 mt-0.5" />
-                  <span>DNS Management</span>
-                </li>
-              </ul>
-
-              <div className="mt-auto">
-                <div className="text-slate-900 text-3xl font-bold mb-6">₹7,999</div>
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="w-full rounded-full bg-indigo-600 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500"
-                >
-                  Choose BYOD
                 </button>
               </div>
             </motion.div>
@@ -405,7 +355,7 @@ export default function App() {
               </ul>
 
               <div className="mt-auto">
-                <div className="text-slate-900 text-3xl font-bold mb-6">₹9,999</div>
+                <div className="text-slate-900 text-3xl font-bold mb-6">₹15,000</div>
                 <button
                   onClick={() => scrollToSection('contact')}
                   className="w-full rounded-full bg-gradient-to-r from-amber-500 to-amber-600 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-amber-200/50 transition hover:opacity-95"
