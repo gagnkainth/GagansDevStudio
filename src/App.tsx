@@ -14,6 +14,9 @@ import {
   MessageCircle
 } from 'lucide-react';
 import { Hero } from '@/components/ui/animated-hero';
+import bakerySiteImg from './images/bakery_site.png';
+import ieltsAcademyImg from './images/ielts_academy.png';
+import furnitureSiteImg from './images/furniture_site.png';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -202,6 +205,88 @@ export default function App() {
               <h3 className="text-xl font-bold mb-2 group-hover:text-action-blue transition-colors duration-300">Tasty Bites Restaurant</h3>
               <p className="text-slate-500">Menu showcase & reservations.</p>
             </motion.div>
+          </div>
+
+          <div className="mt-24 text-center max-w-2xl mx-auto mb-16">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Recent Client Work</h3>
+            <p className="text-slate-600 text-lg">Live websites bringing results for local businesses.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Recent Work 1 */}
+            <motion.a
+              href="https://www.bakestudiobilga.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="group cursor-pointer hover:-translate-y-2 transition-all duration-300 block"
+            >
+              <div className="aspect-video rounded-2xl overflow-hidden bg-slate-100 mb-6 relative shadow-sm group-hover:shadow-2xl group-hover:shadow-slate-900/10 transition-all duration-300">
+                <img
+                  src={bakerySiteImg}
+                  alt="Bake Studio Bilga"
+                  className="object-cover object-top w-full h-full group-hover:scale-110 transition-transform duration-700"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-300" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-action-blue transition-colors duration-300">Bake Studio Bilga</h3>
+              <p className="text-slate-500">Bakery & Cake Shop.</p>
+            </motion.a>
+
+            {/* Recent Work 2 */}
+            <motion.a
+              href="https://www.dhimanacademy.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="group cursor-pointer hover:-translate-y-2 transition-all duration-300 block"
+            >
+              <div className="aspect-video rounded-2xl overflow-hidden bg-slate-100 mb-6 relative shadow-sm group-hover:shadow-2xl group-hover:shadow-slate-900/10 transition-all duration-300">
+                <img
+                  src={ieltsAcademyImg}
+                  alt="Dhiman Academy"
+                  className="object-cover object-top w-full h-full group-hover:scale-110 transition-transform duration-700"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-300" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-action-blue transition-colors duration-300">Dhiman Academy</h3>
+              <p className="text-slate-500">Educational Institute.</p>
+            </motion.a>
+
+            {/* Recent Work 3 */}
+            <motion.a
+              href="https://www.gurutegbahadarfurniturehouse.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="group cursor-pointer hover:-translate-y-2 transition-all duration-300 block"
+            >
+              <div className="aspect-video rounded-2xl overflow-hidden bg-slate-100 mb-6 relative shadow-sm group-hover:shadow-2xl group-hover:shadow-slate-900/10 transition-all duration-300">
+                <img
+                  src={furnitureSiteImg}
+                  alt="Guru Teg Bahadur Furniture House"
+                  className="object-cover object-top w-full h-full group-hover:scale-110 transition-transform duration-700"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-300" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-action-blue transition-colors duration-300">Guru Teg Bahadur Furniture House</h3>
+              <p className="text-slate-500">Premium Furniture Store.</p>
+            </motion.a>
           </div>
         </div>
       </section>
